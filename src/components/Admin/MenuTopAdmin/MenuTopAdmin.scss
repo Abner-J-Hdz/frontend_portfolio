@@ -1,0 +1,35 @@
+/**
+    font-size: 25px;
+    vertical-align: -0.35em;
+*/
+.menu-top{
+    display: flex;//para que todo esté en una sola linea
+    button{
+        background-color: transparent;
+        color: #fff;
+        border: 0;
+
+        &:hover{
+            color: #0098d3;
+        }
+        &:focus,&:active{
+            color: #fff;
+        }
+    }
+
+    &__left{
+        &-logo{
+            width:200px;
+            padding: 0 5px;
+        }
+        & .my-icon{
+            font-size: 25px;
+            vertical-align: -0.35em;            
+        }
+    }
+
+    &__right{
+        position: absolute;
+        right: 0;
+    }
+}

@@ -1,0 +1,26 @@
+.layout-admin{
+    transition: margin-left 0.3s; //duracion de transiciones
+
+    &__header{
+        position: fixed;//fija
+        top:0;
+        left:0;
+        width: 100%;
+        display: flex;
+        padding: 0;
+        height: 65px;
+        z-index: 100; 
+    }
+
+    &__content{
+        min-height: calc(100vh - 65px);/*que ocupe toda la pantalla
+        menos lo que ocupe el menu(65px) para que no haga scroll
+        */
+        padding: 90px 25px 25px 25px;//arriba abajo derecha izquierda
+    }
+
+    &__footer {
+        padding:0;
+        margin: 20px;
+    }
+}

@@ -1,0 +1,81 @@
+$background-dark-web: #16202b;
+
+body{
+    background-color: $background-dark-web !important; 
+    //font-family: sans-serif;
+    //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.my-alert-warning{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 150px;
+
+    .ant-alert-message{
+        font-size: 22px;
+        font-weight: bold;
+        
+    }
+    .ant-alert-description{
+        padding-top: 16px;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+.letter{
+    font-family: sans-serif;
+}
+
+.animated__show{
+
+    animation: 700ms showUp ease;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.animated__show__letter{
+    animation: 1000ms showUpLetter ease-in;
+}
+
+.animated__reveal{
+    animation: 1500ms reveal;
+}
+
+@keyframes showUp {
+    from{
+        transform: scale(0.6) translateX(100%);
+        opacity: 0.5;
+    }
+    to{
+        transform: scale(1) translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes reveal{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    } 
+}
+
+@keyframes showUpLetter {
+    0%{
+        transform: scale(0.4) translateX(100%);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(0.7) translateX(50%);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1) translateX(0%);
+        opacity: 1;
+    }
+}
